@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Project</title>
+</head>
+<style>
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    grid-template-rows: 190px 190px 45px 45px;
+    grid-template-columns: 90px 340px 50px;
+    gap: 10px;
+}
+
+.item{
+    background-color: antiquewhite;
+}
+
+.red{
+    background-color: red;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.blue1{
+    background-color: blue;
+    grid-row: span 2;
+}
+
+.blue2{
+    background-color: blue;
+}
+
+.white3{
+    grid-row: span 2;
+}
+.yellow{
+    background-color: yellow;
+}
+</style>
+<body>
+  <!-- Write your HTML here -->
+
+  <div class="container">
+
+    <div class="item white1"></div>
+    <div class="item red"></div>
+    
+    <div class="item white2"></div>
+    <div class="item blue1"></div>
+    <div class="item white3"></div>
+
+    <div class="item blue2"></div>
+    
+    <div class="item yellow"></div>
+  </div>
+</body>
+
+</html>
